@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/suggestions.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>意见箱</title>
+    <style>
+        body{
+            background: url(img/recruit.jpg) no-repeat center 0;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+<div id="suggestBox" >
+    <h3 >意见箱</h3>
+    <form name="myForm" id="suggestText" method="" action="">
+
+            <div class="question">1. 请问您认为我的个人博客设计总体可以打几分？</div>
+            <div class="answer">
+                <select style="width: 50px;height:20px;margin-left:5px">
+                    <option value ="0">0</option>
+                    <option value ="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value ="4">4</option>
+                    <option value ="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value ="8">8</option>
+                    <option value ="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <div class="question">2. 请问您认为页面的色调搭配有哪些可以改进的地方？</div>
+            <div class="answer"><input ></div>
+
+            <div class="question">3. 请问您认为我的页面布局/结构设计有哪些可以改进的地方？</div>
+            <div class="answer"><input ></div>
+
+            <div class="question">4. 请问您认为我还可以增设哪些栏目？或有哪些栏目较为冗余？</div>
+            <div class="answer"><input ></div>
+
+            <div class="question">5. 请问您还有其他意见吗？</div>
+            <div class="answer">
+                <textarea cols=69 rows=5 style="border:1px solid rgb(123, 123, 228);border-radius: 5px;"></textarea>
+            </div>
+
+
+
+            <input type="hidden">
+            <button class="button" onclick="ensure()" >
+                <a href="home.html" >完成</a>
+            </button>
+            <script>
+                function ensure(){
+                    alert('确认提交吗？');
+                    window.location.href="home.html"
+                }
+            </script>
+    </form>
+</div>
+</body>
+</html>
